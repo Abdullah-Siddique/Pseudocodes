@@ -1,0 +1,59 @@
+DFS(Depth-First Search) is easy to learn. Many of us is feared about it as they think it is a too much complicated algorithm. Let's see what it is actually.
+
+Definition:
+Depth-First Search (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the root (or an arbitrary node) and explores as far as possible along each branch before backtracking.
+
+Pseudocode:
+DFS(graph, start):
+    create a stack
+    push start onto the stack
+    while stack is not empty:
+        current = pop from the stack
+        if current is not visited:
+            mark current as visited
+            for each neighbor of current:
+                if neighbor is not visited:
+                    push neighbor onto the stack
+
+Let's feel it:
+    A
+   / \
+  B   C
+ /     \
+D       E
+
+Nodes: A, B, C, D, E
+
+Edges:
+A to B
+A to C
+B to D
+C to E
+
+Now look attentively.
+
+Start at Node A:
+Push A onto the stack.
+Pop A from the stack:
+Mark A as visited.
+
+Push B and C (neighbors) onto the stack.
+Pop C from the stack (last in, first out):
+Mark C as visited.
+
+Push E (neighbor) onto the stack.
+Pop E from the stack:
+Mark E as visited.
+
+E has no unvisited neighbors.
+Pop B from the stack:
+Mark B as visited.
+
+Push D (neighbor) onto the stack.
+Pop D from the stack:
+Mark D as visited.
+D has no unvisited neighbors.
+
+Order of Visit: A, C, E, B, D
+
+Thank you! Now you know what DFS is.
