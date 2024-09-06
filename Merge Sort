@@ -1,0 +1,5 @@
+if list has more than 1 item:
+  split list in two halves
+  merge sort the first half
+  merge sort the second half
+  merge the two halves
