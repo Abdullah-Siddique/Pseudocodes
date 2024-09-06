@@ -1,0 +1,15 @@
+/*
+Look at the middle of a sorted list.
+If the item you're searching for is smaller, look in the left half.
+If it's bigger, look in the right half.
+Repeat until you find it.
+*/
+while left <= right:
+  middle = (left + right) // 2
+  if array[middle] == target:
+    return middle
+  else if target < array[middle]:
+    right = middle - 1
+  else:
+    left = middle + 1
+return -1
