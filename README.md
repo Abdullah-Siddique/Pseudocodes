@@ -23,4 +23,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries or suggestions, please reach out to [your-siddiquebdullah581@gmail.com](mailto:your-siddiquebdullah581@gmail.com).
+For any inquiries or suggestions, please reach out to [siddiquebdullah581@gmail.com](mailto:your-siddiquebdullah581@gmail.com).
