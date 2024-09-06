@@ -1,0 +1,6 @@
+for i from 0 to n-1:
+  smallest = i
+  for j from i+1 to n-1:
+    if array[j] < array[smallest]:
+      smallest = j
+  swap array[i] and array[smallest]
