@@ -1,9 +1,11 @@
-/*
-Look at the middle of a sorted list.
-If the item you're searching for is smaller, look in the left half.
-If it's bigger, look in the right half.
-Repeat until you find it.
-*/
+Binary search refers to find an element(any element you wish) in an array.
+Here you have  to do:
+->Look at the middle of a sorted list.
+->If the item you're searching for is smaller, look in the left half.
+->If it's bigger, look in the right half.
+->Repeat until you find it.
+
+Pseudocode:
 while left <= right:
   middle = (left + right) // 2
   if array[middle] == target:
