@@ -32,7 +32,7 @@ Here’s a concise representation of the algorithm:
         - Set `left` to `middle + 1` (search the right half).
 
 4. If the loop ends and the target is not found, return -1 (indicating the target is not present in the array).
-
+# In Python, '//' refers to the floor division operator, which divides two numbers and rounds down to the nearest whole number.
 ```
 
 
