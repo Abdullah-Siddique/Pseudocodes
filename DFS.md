@@ -1,9 +1,13 @@
-DFS(Depth-First Search) is easy to learn. Many of us is feared about it as they think it is a too much complicated algorithm. Let's see what it is actually.
+# DFS (Depth-First Search) is Easy to Learn
 
-Definition:
-Depth-First Search (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the root (or an arbitrary node) and explores as far as possible along each branch before backtracking.
+Many people fear DFS because they think it is a complicated algorithm. Let's see what it actually is, and you'll realize it's much simpler than it seems.
 
-Pseudocode:
+## Definition:
+
+**Depth-First Search (DFS)** is an algorithm for traversing or searching tree or graph data structures. It starts at the root (or an arbitrary node) and explores as far as possible along each branch before backtracking.
+
+## Pseudocode:
+
 DFS(graph, start):
     create a stack
     push start onto the stack
@@ -15,22 +19,24 @@ DFS(graph, start):
                 if neighbor is not visited:
                     push neighbor onto the stack
 
-Let's feel it:
-    A
-   / \
-  B   C
- /     \
-D       E
 
-Nodes: A, B, C, D, E
+## Let's Feel It:
 
-Edges:
-A to B
-A to C
-B to D
-C to E
 
-Now look attentively.
+### Nodes:
+- A, B, C, D, E
+
+### Edges:
+- A to B
+- A to C
+- B to D
+- C to E
+
+Now, look attentively and you'll see how DFS works!
+
+---
+
+
 
 # Depth-First Search (DFS) Explanation
 
