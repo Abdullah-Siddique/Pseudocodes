@@ -3,7 +3,7 @@
 BFS refers to **Breadth-First Search**, and we can define it as an algorithm for traversing or searching tree or graph data structures. It starts at a specified node and explores all its neighbors at the present depth level before moving on to nodes at the next depth level.
 
 ## Pseudocode:
-
+```
 BFS(graph, start):
     create a queue
     enqueue start
@@ -14,6 +14,7 @@ BFS(graph, start):
             if neighbor is not visited:
                 mark neighbor as visited
                 enqueue neighbor
+```
 
 Visualization:
 
