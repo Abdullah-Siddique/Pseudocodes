@@ -22,13 +22,13 @@ DFS(graph, start):
 
 ## Let's Feel It:
 
-    A
-   / \
-  B   C
- /     \
-D       E
-
-
+```
+A
+/ \
+B C
+/ \
+D E
+```
 
 ### Nodes:
 - A, B, C, D, E
