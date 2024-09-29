@@ -8,6 +8,7 @@ Many people fear DFS because they think it is a complicated algorithm. Let's see
 
 ## Pseudocode:
 
+```
 DFS(graph, start):
     create a stack
     push start onto the stack
@@ -19,6 +20,7 @@ DFS(graph, start):
                 if neighbor is not visited:
                     push neighbor onto the stack
 
+```
 
 ## Let's Feel It:
 
