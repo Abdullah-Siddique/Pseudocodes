@@ -3,17 +3,16 @@ Before starting, let's define what Dijkstra's Algorithm is.
 Actually Dijkstra’s algorithm finds the shortest path from the starting node to all other nodes in a weighted graph. Let's go to pseudocode.
 ## Pseudocode
 ```
-Dijkstra(graph, start):
-    set distance of start to 0
-    set distance of all other nodes to infinity
-    add all nodes to the unvisited set
-    while unvisited set is not empty:
-        current = node with smallest distance
-        remove current from unvisited set
-        for each neighbor of current:
-            distance = current distance + distance to neighbor
-            if distance < neighbor's distance:
-                update neighbor's distance
+1. Set the distance to the start node as 0.
+2. Set the distance to all other nodes as infinity (since we haven't visited them yet).
+3. Add all nodes to a set of unvisited nodes.
+4. While there are still unvisited nodes:
+    - Pick the node with the smallest distance (start with the starting node).
+    - Remove this node from the unvisited set.
+    - For each of its neighboring nodes:
+        - Calculate the distance from the start node to the neighbor through this current node.
+        - If the calculated distance is less than the known distance for that neighbor, update the neighbor's distance with the smaller value.
+5. Repeat until all nodes are visited or distances are finalized.
 ```
 ## Seems harder? Let's visulize:
 ```
