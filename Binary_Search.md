@@ -15,15 +15,24 @@ Binary search is a powerful algorithm for efficiently locating an element within
 Here’s a concise representation of the algorithm:
 
 ```
-while left <= right:
-  middle = (left + right) // 2
-  if array[middle] == target:
-    return middle
-  else if target < array[middle]:
-    right = middle - 1
-  else:
-    left = middle + 1
-return -1
+1. Initialize `left` to 0 (the start of the array).
+2. Initialize `right` to the last index of the array (length of array - 1).
+
+3. While `left` is less than or equal to `right`:
+   a. Calculate `middle` as the index of the middle element:
+      - `middle = (left + right) // 2`
+   
+   b. Compare the value at `array[middle]` with the `target`:
+      - If `array[middle]` is equal to `target`, return `middle` (the index where the target is found).
+      
+      - If `target` is less than `array[middle]`, adjust the search range:
+        - Set `right` to `middle - 1` (search the left half).
+        
+      - If `target` is greater than `array[middle]`, adjust the search range:
+        - Set `left` to `middle + 1` (search the right half).
+
+4. If the loop ends and the target is not found, return -1 (indicating the target is not present in the array).
+
 ```
 
 
