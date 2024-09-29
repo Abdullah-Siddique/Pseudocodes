@@ -26,7 +26,6 @@ Visualization:
 D       E
 
 ```
-
 ### Nodes:
 - A, B, C, D, E
 
