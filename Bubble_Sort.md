@@ -34,6 +34,39 @@ for i from 0 to n-1:
 
 - **Comparison and Swap:** If the current element `array[j]` is greater than the next element `array[j+1]`, we swap them to move the larger element towards the end of the array.
 
+## Example
+
+Consider the array `[64, 25, 12, 22, 11]`:
+
+1. **First Pass**:
+   - Compare 64 and 25, swap: `[25, 64, 12, 22, 11]`.
+   - Compare 64 and 12, swap: `[25, 12, 64, 22, 11]`.
+   - Compare 64 and 22, swap: `[25, 12, 22, 64, 11]`.
+   - Compare 64 and 11, swap: `[25, 12, 22, 11, 64]`.
+
+2. **Second Pass**:
+   - Compare 25 and 12, swap: `[12, 25, 22, 11, 64]`.
+   - Compare 25 and 22, swap: `[12, 22, 25, 11, 64]`.
+   - Compare 25 and 11, swap: `[12, 22, 11, 25, 64]`.
+   - Compare 25 and 64, no swap needed.
+
+3. **Third Pass**:
+   - Compare 12 and 22, no swap needed.
+   - Compare 22 and 11, swap: `[12, 11, 22, 25, 64]`.
+   - Compare 22 and 25, no swap needed.
+   - Compare 25 and 64, no swap needed.
+
+4. **Fourth Pass**:
+   - Compare 12 and 11, swap: `[11, 12, 22, 25, 64]`.
+   - Compare 12 and 22, no swap needed.
+   - Compare 22 and 25, no swap needed.
+   - Compare 25 and 64, no swap needed.
+
+5. **Fifth Pass**:
+   - The array is now sorted as `[11, 12, 22, 25, 64]`, and no further swaps are needed.
+
+The bubble sort algorithm continues until no swaps are made during a pass, indicating that the array is sorted.
+
 ## Time Complexity
 
 - **Worst-case and Average-case:** O(n²), where n is the number of items being sorted. This occurs when the array is in reverse order.
