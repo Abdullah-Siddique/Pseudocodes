@@ -51,6 +51,47 @@ function merge(left_half, right_half, list):
         k = k + 1                       // Move to the next position in the merged list
 ```
 
+## Example
+
+Consider the array `[64, 25, 12, 22, 11]`:
+
+1. **Initial Array**:
+   - The array is `[64, 25, 12, 22, 11]`.
+
+2. **First Split**:
+   - Split the array into two halves: `[64, 25]` and `[12, 22, 11]`.
+
+3. **Second Split (Left Half)**:
+   - Split `[64, 25]` into `[64]` and `[25]`.
+
+4. **Merge Left Half**:
+   - Merge `[64]` and `[25]`:
+     - Compare 64 and 25.
+     - Resulting array after merge: `[25, 64]`.
+
+5. **Second Split (Right Half)**:
+   - Split `[12, 22, 11]` into `[12]` and `[22, 11]`.
+
+6. **Third Split (Right Half)**:
+   - Split `[22, 11]` into `[22]` and `[11]`.
+
+7. **Merge Right Half**:
+   - Merge `[22]` and `[11]`:
+     - Compare 22 and 11.
+     - Resulting array after merge: `[11, 22]`.
+
+8. **Merge Right Half**:
+   - Merge `[12]` and `[11, 22]`:
+     - Compare 12 and 11.
+     - Resulting array after merge: `[11, 12, 22]`.
+
+9. **Final Merge**:
+   - Merge the two sorted halves `[25, 64]` and `[11, 12, 22]`:
+     - Compare 25 and 11.
+     - Resulting array after merge: `[11, 12, 22, 25, 64]`.
+
+The final sorted array is `[11, 12, 22, 25, 64]`.
+
 
 ## Complexity Analysis
 
